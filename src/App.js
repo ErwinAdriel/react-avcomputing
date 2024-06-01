@@ -1,9 +1,10 @@
-import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <h1>Shop</h1>
+      <Header />
+      <h1 className="text-white">Shop</h1>
     </div>
   );
 }
