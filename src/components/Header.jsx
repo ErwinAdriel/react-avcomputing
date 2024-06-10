@@ -4,10 +4,6 @@ import Navbar from "./Navbar";
 
 export default function Header(){
 
-    const [open, setOpen] = useState(false);
-
-    
-
     return(
         <header class="relative">
             <div class="bg-slate-900 text-white w-full h-10 sm:px-20 px-[40%]">
