@@ -39,7 +39,7 @@ export default function Banner(){
                 <div class="xl:h-full mb-20 xl:mb-0 w-full relative">
                     <div class="w-full">
                         <div class="item w-full xl:h-[400px] h-[500px]">
-                            <div onChange={nextSlide} class="bg-cover bg-center bg-no-repeat h-full w-full duration-500" style={{backgroundImage: `url(${slides[actualIndex].url})`}}>
+                            <div class="bg-cover bg-center bg-no-repeat h-full w-full duration-500" style={{backgroundImage: `url(${slides[actualIndex].url})`}}>
                             </div>
                         </div>
                     </div>

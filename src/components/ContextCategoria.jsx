@@ -8,7 +8,7 @@ import c7 from "../img/categorias/tv.png";
 import c8 from "../img/categorias/mouse.png";
 import { CardCategoria } from "./CardCategoria";
 
-export function ContextCategoria(){
+export default function ContextCategoria(){
 
     const categorias = [
         {name: "Celular", url: c1},
