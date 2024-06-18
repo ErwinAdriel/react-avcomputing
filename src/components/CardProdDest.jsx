@@ -1,13 +1,18 @@
 import { IoCartOutline } from "react-icons/io5";
 
 export default function CardProdDest({producto}){
+
+    function addToCart(){
+        
+    }
+
     return(
         <div class="w-full h-full border  relative group overflow-hidden">
             <div class="w-full h-[322px] mt-4 bg-cover bg-center bg-no-repeat" style={{backgroundImage: `url(${producto.url})`}}>
             </div>
             <div class="flex justify-center h-[102px] items-center relative">
                 <div class="absolute w-full flex justify-center items-center top-40 group-hover:top-[40px] transition-all duration-500 ease-in-out">
-                    <button type="button" class="bg-blue-600 w-[50%] flex items-center justify-center">
+                    <button onClick={() => addToCart()} type="button" class="bg-blue-600 w-[50%] flex items-center justify-center">
                         <div class="flex text-white p-4 space-x-3 text-1xl">
                             <span class="my-auto"><IoCartOutline /></span>
                             <span>Agregar</span>

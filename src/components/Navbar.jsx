@@ -46,7 +46,7 @@ export default function Navbar(){
                             </div>
                             <div class="flex space-x-3 items-center">
                                 <div class="md:flex text-3xl hidden"><a href="#"><span><MdFavoriteBorder /></span></a></div>
-                                <div class="relative text-3xl">
+                                <div class="group relative text-3xl">
                                     <a href="#"><span><IoCartOutline /></span></a>
                                     <span class="w-[18px] h-[18px] rounded-full absolute -top-2.5 -right-2.5 flex justify-center items-center text-[9px] bg-blue-700 text-white">3</span>
                                 </div>
