@@ -6,9 +6,9 @@ import CardProdDest from "./CardProdDest";
 export default function ContextProductsDestacados(){
 
     const productos = [
-        {name: "Motorola Moto Edge 40 Verde", url: p1},
-        {name: "Notebook ASUS X515EA I5 1135G7 8GB", url: p2},
-        {name: "PC AMD 3000G SSD 240GB + LED 19 Philips", url: p3},
+        {id: 1, name: "Motorola Moto Edge 40 Verde", url: p1, price: '899.999,00'},
+        {id: 2, name: "Notebook ASUS X515EA I5 1135G7 8GB", url: p2, price: '899.999,00'},
+        {id: 3, name: "PC AMD 3000G SSD 240GB + LED 19 Philips", url: p3, price: '899.999,00'},
     ]
     return (
         <div class="container mx-auto my-4">

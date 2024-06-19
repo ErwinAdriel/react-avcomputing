@@ -7,20 +7,20 @@ const [cart, setCart] = useCart();
 
 const addToCart = () => {
     setCart((currItems) => {
-        const id = 1;
-        const isItemsFound = currItems.find((item) => item.id === id);
+        const isItemsFound = currItems.find((item) => item.id === producto.id);
         if(isItemsFound){
             return currItems.map((item) => {
-                if(item.id === id) {
+                if(item.id === producto.id) {
                     return{...item, quantity: item.quantity + 1};
                 } else {
                     return item;
                 }
             });
         } else {
-            return [...currItems, {id: 1, quantity: 1, price:100}];
+            return [...currItems, {id: producto.id, quantity: 1, price: producto.price}];
         }
     })
+
 }
 
     return(
@@ -41,7 +41,7 @@ const addToCart = () => {
                         <p class="mb-2.5 text-[20px] font-600 text-center text-black leading-[24px] line-clamp-2">{producto.name}</p>
                     </a>
                     <div class="flex justify-center">
-                        <span class="text-gray-500 line-through mr-1 inline-block font-600 text-center text-[18px]">$899.999,00</span>
+                        <span class="text-gray-500 line-through mr-1 inline-block font-600 text-center text-[18px]">${producto.price}</span>
                         <span class="text-red-600 font-600 text-center text-[18px]">22% OFF</span>
                     </div>
                     <div class="flex justify-center">
