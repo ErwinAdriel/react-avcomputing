@@ -22,7 +22,7 @@ export default function ContextCategoria(){
     ];
 
     return(
-        <div class="container mx-auto my-4">
+        <div class="container md:px-20 my-4">
             <div class="flex justify-between items-center px-8 sm:px-0 mb-6">
                 <p class="sm:text-3xl text-3xl font-600 text-black leading-none">Categorias</p>
             </div>

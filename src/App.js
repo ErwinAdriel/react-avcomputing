@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 import ContextCategoria  from './components/ContextCategoria';
 import ContextProductsDestacados  from './components/ContextProductsDestacados';
 import { CartProvider } from './context/Cart';
@@ -14,6 +15,7 @@ function App() {
         < ContextCategoria />
         < ContextProductsDestacados />
         </div>
+        < Footer />
       </div>
     </CartProvider>
     
