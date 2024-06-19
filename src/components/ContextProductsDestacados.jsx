@@ -3,7 +3,6 @@ import p2 from "../img/productos/prod2.jpg";
 import p3 from "../img/productos/prod3.jpg";
 import CardProdDest from "./CardProdDest";
 
-
 export default function ContextProductsDestacados(){
 
     const productos = [

@@ -1,10 +1,27 @@
 import { IoCartOutline } from "react-icons/io5";
+import { useCart}  from "../hooks/useCart";
 
 export default function CardProdDest({producto}){
 
-    function addToCart(){
-        
-    }
+const [cart, setCart] = useCart();
+
+const addToCart = () => {
+    setCart((currItems) => {
+        const id = 1;
+        const isItemsFound = currItems.find((item) => item.id === id);
+        if(isItemsFound){
+            return currItems.map((item) => {
+                if(item.id === id) {
+                    return{...item, quantity: item.quantity + 1};
+                } else {
+                    return item;
+                }
+            });
+        } else {
+            return [...currItems, {id: 1, quantity: 1, price:100}];
+        }
+    })
+}
 
     return(
         <div class="w-full h-full border  relative group overflow-hidden">

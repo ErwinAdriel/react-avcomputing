@@ -3,6 +3,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { IoCartOutline, IoClose } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
+import { useCart } from "../hooks/useCart";
 
 export default function Navbar(){
 
@@ -13,7 +14,7 @@ export default function Navbar(){
     const [openMenu, setOpenMenu] = useState(false);
     
     const Menus = ["Notebook", "Monitores", "Pc's de Escritorio"];
-    
+
     const Categorias = [
                         {name: "Laptops", link: "/laptops"},
                         {name: "Celulares", link: "/celulares"},
@@ -21,6 +22,11 @@ export default function Navbar(){
                         {name: "Audio", link: "/audio"},
                         {name: "Gaming", link: "/gaming"}
                     ];
+    const [cart,setCart] = useCart();
+
+    const quantity = cart.reduce((acc, curr) => {
+        return acc + curr.quantity;
+    }, 0)
     return (
         <div>
             <div class="w-full h-[86px] bg-white lg:block md:px-20 px-5">
@@ -48,7 +54,7 @@ export default function Navbar(){
                                 <div class="md:flex text-3xl hidden"><a href="#"><span><MdFavoriteBorder /></span></a></div>
                                 <div class="group relative text-3xl">
                                     <a href="#"><span><IoCartOutline /></span></a>
-                                    <span class="w-[18px] h-[18px] rounded-full absolute -top-2.5 -right-2.5 flex justify-center items-center text-[9px] bg-blue-700 text-white">3</span>
+                                    <span class="w-[18px] h-[18px] rounded-full absolute -top-2.5 -right-2.5 flex justify-center items-center text-[9px] bg-blue-700 text-white">{quantity}</span>
                                 </div>
                                 <div class="sm:flex text-2xl"><a href="#"><span><FaRegUser /></span></a></div>
                             </div>
