@@ -1,7 +1,9 @@
+import { FaFacebook, FaInstagram, FaYoutube, FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
+
 export default function Footer(){
     return(
-        <footer class=" bg-slate-900 text-white print:hidden px-20">
-            <div class="container block mx-auto pt-[56px]">
+        <footer class=" bg-slate-900 text-white print:hidden">
+            <div class=" block mx-auto pt-[56px] px-20">
                 <div class="w-full flex flex-col items-center mb-[50px]">
                     <div class="mb-[40px]">
                         <span class="text-3xl font-bold">AvComputing</span>
@@ -46,8 +48,20 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>
-                <div class="border-t border-gray-500 lg:h-[82px] lg:flex justify-between items-center">
-                    
+            </div>
+            <div class="bg-black lg:h-[86px] lg:flex justify-between items-center px-20">
+                <div class="flex lg:space-x-5 justify-between items-center mb-3">
+                    <div class="flex space-x-2 items-center">
+                        <FaFacebook />
+                        <FaInstagram />
+                        <FaYoutube />
+                    </div>
+                    <span class=" sm:text-base font-300">©2024 <a href="/" class="font-bold">AvComputing.</a> Todos los derechos reservados</span>
+                </div>
+                <div class="flex space-x-2 text-4xl">
+                    <FaCcVisa />
+                    <FaCcMastercard />
+                    <FaCcPaypal />
                 </div>
             </div>
         </footer>
