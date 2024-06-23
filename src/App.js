@@ -1,24 +1,22 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Index from './pages/Index';
+import AllProducts from './pages/AllProducts';
 import Header from './components/Header';
-import Banner from './components/Banner';
 import Footer from './components/Footer';
-import ContextCategoria  from './components/ContextCategoria';
-import ContextProductsDestacados  from './components/ContextProductsDestacados';
 import { CartProvider } from './context/Cart';
 
 function App() {
   return (
-    <CartProvider>
-      <div className="App">
-        <Header />
-        <div class="w-full pt-0">
-        < Banner />
-        < ContextCategoria />
-        < ContextProductsDestacados />
-        </div>
-        < Footer />
-      </div>
-    </CartProvider>
-    
+    <BrowserRouter>
+      <CartProvider>
+          < Header />
+          <Routes>
+            < Route path='/' element={< Index />}/>
+            < Route path='/allProducts' element={<AllProducts />} />
+          </Routes>
+          < Footer />
+      </CartProvider>
+    </BrowserRouter>
   );
 }
 

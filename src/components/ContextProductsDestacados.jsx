@@ -6,6 +6,7 @@ import p4 from "../img/productos/prod4.jpg";
 import p5 from "../img/productos/prod5.jpg";
 import p6 from "../img/productos/prod6.jpg";
 import CardProdDest from "./CardProdDest";
+import { Link } from "react-router-dom";
 
 export default function ContextProductsDestacados(){
 
@@ -21,14 +22,14 @@ export default function ContextProductsDestacados(){
         <div class="container md:px-20 my-4">
             <div class="flex justify-between items-center px-2 sm:px-0 mb-6">
                 <p class="sm:text-3xl text-3xl text-black leading-none">Destacados</p>
-                <a href="">
+                <Link to="/allProducts">
                     <div class="flex text-xl ">
                         <span>Ver más</span>
                         <div class="text-3xl">
                             <GrFormNextLink />
                         </div>
                     </div>
-                </a>
+                </Link>
             </div>
             <div class="w-full">
                 <div class="mx-auto container">

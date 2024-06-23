@@ -4,6 +4,7 @@ import { IoCartOutline, IoClose } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
 import { useState } from "react";
 import { useCart } from "../hooks/useCart";
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
@@ -39,7 +40,7 @@ export default function Navbar(){
                                     <button onClick={() => setOpenMenu(!openMenu)}><IoClose /></button>  } 
                                 </span>
                             </div>
-                            <div class="text-3xl font-bold"><a href="#"><span>AvComputing</span></a></div>
+                            <div class="text-3xl font-bold"><Link to="/"><span>AvComputing</span></Link></div>
                             <div class="md:flex w-[517px] h-[44px] border border-slate-400 hidden">
                                 <div class="w-full h-full flex items-center bg-white">
                                     <form action="#" class="h-full w-full">
