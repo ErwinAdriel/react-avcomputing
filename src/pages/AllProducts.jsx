@@ -1,21 +1,16 @@
 import CardProdDest from "../components/CardProdDest";
-import p1 from "../img/productos/prod.jpeg";
-import p2 from "../img/productos/prod2.jpg";
-import p3 from "../img/productos/prod3.jpg";
-import p4 from "../img/productos/prod4.jpg";
-import p5 from "../img/productos/prod5.jpg";
-import p6 from "../img/productos/prod6.jpg";
+
 
 export default function AllProducts(){
 
-    const productos = [
+    /*const productos = [
         {id: 1, name: "Motorola Moto Edge 40 Verde", url: p1, price: '899.999,00'},
         {id: 2, name: "Notebook ASUS X515EA I5 1135G7 8GB", url: p2, price: '899.999,00'},
         {id: 3, name: "PC AMD 3000G SSD 240GB + LED 19 Philips", url: p3, price: '899.999,00'},
         {id: 4, name: "TABLET LENOVO 10 TB M10 ", url: p4, price: '899.999,00'},
         {id: 5, name: "TECLADO INALAMBRICO REDRAGON DRACONIC PRO SW", url: p5, price: '899.999,00'},
         {id: 6, name: "SMART TV 43 SAMSUNG", url: p6, price: '899.999,00'},
-    ]
+    ]*/
 
     const marcas =[
         {id:0, name: "Apple"},
@@ -90,11 +85,11 @@ export default function AllProducts(){
                         </div>
                     </div>
                     <div class="grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-5 mb-[40px] lg:pr-[30px]">
-                        {productos.map((producto) => (
+                        {/*productos.map((producto) => (
                             <div class="w-full h-full bg-white relative group overflow-hidden">
                                 < CardProdDest producto={producto}/>
                             </div>
-                        ))}
+                        ))*/}
                     </div>
                 </div>
             </div>
